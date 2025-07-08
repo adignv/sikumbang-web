@@ -113,15 +113,24 @@
 
         /* Hero Section */
         .hero {
-            background: var(--gradient-main); /* Gradasi pink untuk hero section */
-            color: var(--white);
+            /* Hapus atau komentari background gradient yang lama jika masih ada */     
+            /* background: var(--gradient-main); */ 
+            
+            /* Menggunakan overlay gradient hitam transparan di atas gambar */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('bbg.png'); 
+            background-size: cover; /* Memastikan gambar menutupi seluruh area */
+            background-repeat: no-repeat; /* Mencegah gambar berulang */
+            background-position: center; /* Memposisikan gambar di tengah */
+            background-attachment: scroll; /* Opsional: gunakan 'fixed' jika ingin gambar tidak bergerak saat digulir */
+
+            color: var(--white); 
             text-align: center;
             padding: 120px 20px;
             display: flex;
             align-items: center;
             justify-content: center;
             min-height: 70vh;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Bayangan teks untuk visibilitas ekstra */
         }
 
         .hero-content h1 {
