@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
     /* --- Menggunakan gambar sebagai background --- */
-    background: linear-gradient(to bottom, #fff1f1, #ffbfca); /* Gradien biru-ungu ke pink */
+    background-image:url('bgg.png'); 
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -175,7 +175,7 @@ body {
 
 /* --- General Button Styles --- */
 .btn {
-    background-color: #e91e63; /* Warna pink untuk tombol umum */
+    background-color: #AE2076; /* Warna pink untuk tombol umum */
     color: white;
     border: none;
     padding: 15px 25px;
@@ -191,7 +191,7 @@ body {
 }
 
 .btn:hover {
-    background-color: #d81b60; /* Warna pink lebih gelap saat hover */
+    background-color: #72154d; /* Warna pink lebih gelap saat hover */
     transform: translateY(-2px); /* Efek sedikit terangkat */
 }
 
